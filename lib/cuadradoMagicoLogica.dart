@@ -70,16 +70,16 @@ class _CuadradomMagicoLogica extends State<CuadradomMagicoLogica> {
       return;
     }
 
-    int sumaEsperada = numero1 + numero2 + numero3;
-    bool esCuadradoMagico = (numero4 + numero5 + numero6 == sumaEsperada) &&
-        (numero7 + numero8 + numero9 == sumaEsperada) &&
-        (numero1 + numero4 + numero7 == sumaEsperada) &&
-        (numero2 + numero5 + numero8 == sumaEsperada) &&
-        (numero3 + numero6 + numero9 == sumaEsperada) &&
-        (numero1 + numero5 + numero9 == sumaEsperada) &&
-        (numero3 + numero5 + numero7 == sumaEsperada);
+    int sumaNecesaria = numero1 + numero2 + numero3;
+    bool seCumpleCuadroMagico = (numero4 + numero5 + numero6 == sumaNecesaria) &&
+        (numero7 + numero8 + numero9 == sumaNecesaria) &&
+        (numero1 + numero4 + numero7 == sumaNecesaria) &&
+        (numero2 + numero5 + numero8 == sumaNecesaria) &&
+        (numero3 + numero6 + numero9 == sumaNecesaria) &&
+        (numero1 + numero5 + numero9 == sumaNecesaria) &&
+        (numero3 + numero5 + numero7 == sumaNecesaria);
 
-    if (esCuadradoMagico) {
+    if (seCumpleCuadroMagico) {
       mostrarAlerta(
           '¡Felicidades, has logrado completar el cuadro mágico!', 'Victoria');
     } else {

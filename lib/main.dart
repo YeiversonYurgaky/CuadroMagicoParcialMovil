@@ -12,9 +12,9 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: ThemeData(
-          useMaterial3: true, // Activar Material 3
+          useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.brown, // Colores principales derivados de brown
+            seedColor: Colors.brown,
           ),
           textTheme: TextTheme(
             headlineLarge: TextStyle(
@@ -25,11 +25,11 @@ class MainApp extends StatelessWidget {
           ),
           elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.brown[100], // Color de los botones
+              backgroundColor: Colors.brown[100],
             ),
           ),
           appBarTheme: AppBarTheme(
-            backgroundColor: Colors.brown[100], // Fondo del AppBar
+            backgroundColor: Colors.brown[100],
             centerTitle: true,
           ),
         ),
