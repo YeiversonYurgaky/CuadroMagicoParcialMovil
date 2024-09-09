@@ -41,15 +41,15 @@ class _CuadradomMagicoLogica extends State<CuadradomMagicoLogica> {
   }
 
   void validarQueSeCumplaElCuadroMagico() {
-    int numero1 = int.tryParse(numeroerosDadosPorUsuario[0].text) ?? 0;
-    int numero2 = int.tryParse(numeroerosDadosPorUsuario[1].text) ?? 0;
-    int numero3 = int.tryParse(numeroerosDadosPorUsuario[2].text) ?? 0;
-    int numero4 = int.tryParse(numeroerosDadosPorUsuario[3].text) ?? 0;
-    int numero5 = int.tryParse(numeroerosDadosPorUsuario[4].text) ?? 0;
-    int numero6 = int.tryParse(numeroerosDadosPorUsuario[5].text) ?? 0;
-    int numero7 = int.tryParse(numeroerosDadosPorUsuario[6].text) ?? 0;
-    int numero8 = int.tryParse(numeroerosDadosPorUsuario[7].text) ?? 0;
-    int numero9 = int.tryParse(numeroerosDadosPorUsuario[8].text) ?? 0;
+    int numero1 = int.tryParse(numeroerosDadosPorUsuario[0].text) ?? 1;
+    int numero2 = int.tryParse(numeroerosDadosPorUsuario[1].text) ?? 1;
+    int numero3 = int.tryParse(numeroerosDadosPorUsuario[2].text) ?? 1;
+    int numero4 = int.tryParse(numeroerosDadosPorUsuario[3].text) ?? 1;
+    int numero5 = int.tryParse(numeroerosDadosPorUsuario[4].text) ?? 1;
+    int numero6 = int.tryParse(numeroerosDadosPorUsuario[5].text) ?? 1;
+    int numero7 = int.tryParse(numeroerosDadosPorUsuario[6].text) ?? 1;
+    int numero8 = int.tryParse(numeroerosDadosPorUsuario[7].text) ?? 1;
+    int numero9 = int.tryParse(numeroerosDadosPorUsuario[8].text) ?? 1;
 
     Set<int> verificarNumerosSeanUnicos = {
       numero1,
