@@ -31,7 +31,7 @@ class _CuadradomMagicoLogica extends State<CuadradomMagicoLogica> {
             TextButton(
               child: Text("Continuar"),
               onPressed: () {
-                Navigator.of(context).pop();
+                Navigator.pop(context);
               },
             ),
           ],
@@ -71,13 +71,14 @@ class _CuadradomMagicoLogica extends State<CuadradomMagicoLogica> {
     }
 
     int sumaNecesaria = numero1 + numero2 + numero3;
-    bool seCumpleCuadroMagico = (numero4 + numero5 + numero6 == sumaNecesaria) &&
-        (numero7 + numero8 + numero9 == sumaNecesaria) &&
-        (numero1 + numero4 + numero7 == sumaNecesaria) &&
-        (numero2 + numero5 + numero8 == sumaNecesaria) &&
-        (numero3 + numero6 + numero9 == sumaNecesaria) &&
-        (numero1 + numero5 + numero9 == sumaNecesaria) &&
-        (numero3 + numero5 + numero7 == sumaNecesaria);
+    bool seCumpleCuadroMagico =
+        (numero4 + numero5 + numero6 == sumaNecesaria) &&
+            (numero7 + numero8 + numero9 == sumaNecesaria) &&
+            (numero1 + numero4 + numero7 == sumaNecesaria) &&
+            (numero2 + numero5 + numero8 == sumaNecesaria) &&
+            (numero3 + numero6 + numero9 == sumaNecesaria) &&
+            (numero1 + numero5 + numero9 == sumaNecesaria) &&
+            (numero3 + numero5 + numero7 == sumaNecesaria);
 
     if (seCumpleCuadroMagico) {
       mostrarAlerta(
@@ -96,8 +97,8 @@ class _CuadradomMagicoLogica extends State<CuadradomMagicoLogica> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              width: 400,
-              height: 400,
+              width: 350,
+              height: 350,
               child: GridView.builder(
                 physics: NeverScrollableScrollPhysics(),
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -106,7 +107,7 @@ class _CuadradomMagicoLogica extends State<CuadradomMagicoLogica> {
                 itemCount: 9,
                 itemBuilder: (context, index) {
                   return Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(10.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.brown[100],
@@ -137,7 +138,7 @@ class _CuadradomMagicoLogica extends State<CuadradomMagicoLogica> {
               onPressed: validarQueSeCumplaElCuadroMagico,
               child: Text("Validar Cuadro Mágico"),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 30),
           ],
         ),
       ),
